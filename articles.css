@@ -1,5 +1,8 @@
 body{
-    background-color: #F0FFFF;
+    background-color: #F8FDFF;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    height: auto;
+    width: auto;
 }
 
 .titre{
@@ -7,11 +10,11 @@ body{
     text-align: center;
     font-size: 130px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     background-image: url(https://img.lght.pics/PKPO.jpg);
     background-size: cover;
     background-position: center;
     height: 37%;
+    width: auto;
     padding: 60px;
 }
 
@@ -20,8 +23,11 @@ body{
     width: 80%;
     flex-direction: column;
     float: right;
-    height: 40px;
     margin-right: 150px;
+    overflow: scroll;
+    overflow: auto;
+    height: 400px;
+
 }
 
 .imgs{
@@ -30,12 +36,12 @@ body{
     padding-top: 30px;
     padding-right: 30px;
 }
+
 .date{
     display: flex;
     justify-content: left;
     margin-left: 230px;
     margin-bottom: 10px;
-
 }
 
  button{
@@ -47,38 +53,59 @@ body{
      font-size: 15px;
  }
 
-button:hover{
-
-} 
-
 hr{
     margin-top: 40px;
     color: #5A595b;
 }
-.content{
-     display: flex;
-     flex-direction: column;
-     float: left;
-     width:40%;
-     margin-top: 700px;
-     margin-left: 100px;
-     background-color: #5A595b;
-     padding: 50px 60px;
- }
+
+
 .littitre{
     font-size: 50px;
 }
 
-a { 
+a{ 
     text-decoration:none;
 }
-.video{
+
+.content{
     display: flex;
-    float: right;
-    margin-top: 700px;
-    margin-right: 200px;
+    flex-direction: column;
+    float: left;
+    width: 40%;
+    background-color: #E3E3E3;
+    padding: 30px 30px;
+    margin-top: 25px;
+}
+.video{
+   display: flex;
+   float: right;
+   justify-content: right;
+   margin-right: 150px;
+   margin-top: 20px;
+
 }
 
-@media(min-width: 768px) and (max-width: 1388px)
+@media(max-width: 700px)
 {
+    body{ 
+        width: 20px;
+    }
+
+    .titre{
+        width: auto;
+        height: 60px;
+        font-size: 65px;
+        text-align: center;   
+}
+    
+    .box{
+        display: flex;
+        float: none;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin:auto;
+        padding: auto;  
+    }
 }
