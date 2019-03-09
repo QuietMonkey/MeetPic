@@ -96,7 +96,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 95vh;
     } 
 
 .card .box{
@@ -129,7 +129,7 @@ h2{
 
 .icon{
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
