@@ -6,125 +6,165 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gallery</title>
     <link rel="stylesheet" href="gallery.css">
+
+    <!--Police d'écriture logos réseaux sociaux FOOTER-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!--Police d'écriture logo menu BURGER-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Police d'écriture Logo FOOTER-->
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
-        <!-- Header -->
-    <header>
+
+<!-- Header/Barnav -->
+<header>
+    <div class="box">
+        <img src="https://i.postimg.cc/RhgLZrmj/Artboard-1.png" alt="logo" class="logo">
+        <input class="burger" type="checkbox">
+        
+        <nav>
         <div class="menu">
-    
-           
-            <input class="burger" type="checkbox">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li> 
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="articles.html">Articles</a></li>
-                    <li><a href="marketplace.html">Shop</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>    
-    </header>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="marketplace.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div> 
+       
+</header>
 
-        <!-- Gallery Première Catégorie -->
-    <section id="Categorie1">
-            <div class="Pic1">Pic 1</div>
-            <div class="Pic2">Pic 2</div>
-            <div class="Pic3">Pic 3</div>
-            <div class="Pic4">Pic 4</div>
-            <div class="Pic5">Pic 5</div>
-            <div class="Pic6">Pic 6</div>
-            <div class="Pic7">Pic 7</div>
-            <div class="Pic8">Pic 8</div>
-            <div class="Pic9">Pic 9</div>
-            <div class="Pic10">Pic 10</div>
-            <div class="Pic11">Pic 11</div>
-            <div class="Pic12">Pic 12</div>
-            <div class="Pic13">Pic 13</div>
-            <div class="Pic14">Pic 14</div>
-            <div class="Pic15">Pic 15</div>
-            <div class="Pic16">Pic 16</div>
-    </section>
+<!--MODAL!-->
 
-        <!-- Gallery Deuxième Catégorie -->
-    <section id="Categorie2">
-            <div class="Pic1">Pic 1</div>
-            <div class="Pic2">Pic 2</div>
-            <div class="Pic3">Pic 3</div>
-            <div class="Pic4">Pic 4</div>
-            <div class="Pic5">Pic 5</div>
-            <div class="Pic6">Pic 6</div>
-            <div class="Pic7">Pic 7</div>
-            <div class="Pic8">Pic 8</div>
-            <div class="Pic9">Pic 9</div>
-            <div class="Pic10">Pic 10</div>
-            <div class="Pic11">Pic 11</div>
-            <div class="Pic12">Pic 12</div>
-            <div class="Pic13">Pic 13</div>
-            <div class="Pic14">Pic 14</div>
-            <div class="Pic15">Pic 15</div>
-            <div class="Pic16">Pic 16</div>
-    </section>
+<section id="modal">
+    <span class="close">&times;</span>
+    <div id="modal-content"></div>>
+</section>
 
-    <footer class="footer1">
-        <!-- left footer -->
-        <div class="footer-left">
-        
-        <h3>John<span> doe</span></h3>
-        <!-- Link/ancre*-->
-        <p class="footer-links">
-        <a href="#">Home</a> ·
-        <a href="#">Blog</a> ·
-        <a href="#">Prices</a> ·
-        <a href="#">About</a> ·
-        <a href="#">Faq</a> .
-        <a href="#">Contact</a>
-        </p>
-        
-        <p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
-        </div>
-        <!-- mid footer-->
-        <div class="footer-center">
-        
-        <div>
-        <i class="fa fa-map-marker"></i>
-        <p><span>11 rue de poissy</span> Paris 75005</p>
-        </div>
-        
-        <div>
-        <i class="fa fa-phone"></i>
-        <p>phone de la wild</p>
-        </div>
-        
-        <div>
-        <i class="fa fa-envelope"></i>
-        <p><a href="mailto:les.casseurs flowters.support@gmail.com">les.casseurs flowters.support@gmail.com</a></p>
-        </div>
-        
-        </div>
-        <!-- right footer -->
-        <div class="footer-right">
-        
-        <p class="footer-company-about">
-        <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-        </p>
-        
-        <div class="footer-icons">
-        
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-        
-        </div>
-        
-        </div>
-        
-        </footer>
 
-    
+
+<!-- Gallery Première Catégorie -->
+<section id="Categorie1">
+    <div class="Pic1" onclick="modalOpen('paysage')">Pic 1</div>
+    <div class="Pic2" onclick="modalOpen('paysage2')">Pic 2</div>
+    <div class="Pic3" onclick="modalOpen('paysage3')">Pic 3</div>
+    <div class="Pic4" onclick="modalOpen('paysage4')">Pic 4</div>
+    <div class="Pic5" onclick="modalOpen('paysage5')">Pic 5</div>
+    <div class="Pic6" onclick="modalOpen('paysage6')">Pic 6</div>
+    <div class="Pic7" onclick="modalOpen('paysage7')">Pic 7</div>
+    <div class="Pic8" onclick="modalOpen('paysage8')">Pic 8</div>
+    <div class="Pic9" onclick="modalOpen('paysage9')">Pic 9</div>
+    <div class="Pic10" onclick="modalOpen('paysage10')">Pic 10</div>
+    <div class="Pic11" onclick="modalOpen('paysage11')">Pic 11</div>
+    <div class="Pic12" onclick="modalOpen('paysage12')">Pic 12</div>
+    <div class="Pic13" onclick="modalOpen('paysage13')">Pic 13</div>
+    <div class="Pic14" onclick="modalOpen('paysage14')">Pic 14</div>
+    <div class="Pic15" onclick="modalOpen('paysage15')">Pic 15</div>
+    <div class="Pic16" onclick="modalOpen('paysage16')">Pic 16</div>
+</section>
+
+<!-- Gallery Deuxième Catégorie -->
+<section id="Categorie2">
+    <div class="Pic1" onclick="modalOpen('panda')">Pic 1</div>
+    <div class="Pic2" onclick="modalOpen('panda2')">Pic 2</div>
+    <div class="Pic3" onclick="modalOpen('panda3')">Pic 3</div>
+    <div class="Pic4" onclick="modalOpen('panda4')">Pic 4</div>
+    <div class="Pic5" onclick="modalOpen('panda5')">Pic 5</div>
+    <div class="Pic6" onclick="modalOpen('panda6')">Pic 6</div>
+    <div class="Pic7" onclick="modalOpen('panda7')">Pic 7</div>
+    <div class="Pic8" onclick="modalOpen('panda8')">Pic 8</div>
+    <div class="Pic9" onclick="modalOpen('panda9')">Pic 9</div>
+    <div class="Pic10" onclick="modalOpen('panda10')">Pic 10</div>
+    <div class="Pic11" onclick="modalOpen('panda11')">Pic 11</div>
+    <div class="Pic12" onclick="modalOpen('panda12')">Pic 12</div>
+    <div class="Pic13" onclick="modalOpen('panda13')">Pic 13</div>
+    <div class="Pic14" onclick="modalOpen('panda14')">Pic 14</div>
+    <div class="Pic15" onclick="modalOpen('panda15')">Pic 15</div>
+    <div class="Pic16" onclick="modalOpen('panda16')">Pic 16</div>
+</section>
+
+<!-- Gallery Troisième Catégorie -->
+<section id="Categorie3">
+    <div class="Pic1" onclick="modalOpen('city')">Pic 1</div>
+    <div class="Pic2" onclick="modalOpen('city2')">Pic 2</div>
+    <div class="Pic3" onclick="modalOpen('city3')">Pic 3</div>
+    <div class="Pic4" onclick="modalOpen('city4')">Pic 4</div>
+    <div class="Pic5" onclick="modalOpen('city5')">Pic 5</div>
+    <div class="Pic6" onclick="modalOpen('city6')">Pic 6</div>
+    <div class="Pic7" onclick="modalOpen('city7')">Pic 7</div>
+    <div class="Pic8" onclick="modalOpen('city8')">Pic 8</div>
+    <div class="Pic9" onclick="modalOpen('city9')">Pic 9</div>
+    <div class="Pic10" onclick="modalOpen('city10')">Pic 10</div>
+    <div class="Pic11" onclick="modalOpen('city11')">Pic 11</div>
+    <div class="Pic12" onclick="modalOpen('city12')">Pic 12</div>
+    <div class="Pic13" onclick="modalOpen('city13')">Pic 13</div>
+    <div class="Pic14" onclick="modalOpen('city14')">Pic 14</div>
+    <div class="Pic15" onclick="modalOpen('city15')">Pic 15</div>
+    <div class="Pic16" onclick="modalOpen('city16')">Pic 16</div>
+</section>
+
+
+<!--FOOTER-->
+<footer class="footer1">
+<!-- left footer -->
+<div class="footer-left">
+
+<h3>John<span> doe</span></h3>
+<!-- Link/ancre*-->
+<p class="footer-links">
+<a href="#">Home</a> ·
+<a href="#">Blog</a> ·
+<a href="#">Prices</a> ·
+<a href="#">About</a> ·
+<a href="#">Faq</a> .
+<a href="#">Contact</a>
+</p>
+
+<p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
+</div>
+<!-- mid footer-->
+<div class="footer-center">
+
+<div>
+<i class="fa fa-map-marker"></i>
+<p><span>11 rue de poissy</span> Paris 75005</p>
+</div>
+
+<div>
+<i class="fa fa-phone"></i>
+<p>06.25.84.69.15</p>
+</div>
+
+
+</div>
+<!-- right footer -->
+<div class="footer-right">
+
+<p class="footer-company-about">
+<span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+</p>
+
+<div class="footer-icons">
+
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+<a href="#"><i class="fa fa-github"></i></a>
+
+</div>
+
+</div>
+
+</footer>
+
+<!--Script JS-->
+<script src="gallery.js"></script>
 </body>
 </html>

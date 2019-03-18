@@ -1,87 +1,77 @@
+
 body{
-    margin: 0px;
-    padding: 0px;
-    background: #FCFCFC;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+margin: 0px;
+padding: 0px;
+background: #FCFCFC;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 300;
 }
 
-/*Barre de Navigation*/
-.menu .burger{
-  display: none;
+/*NAVBAR*/
   
+.box .logo{
+height: 75%;
+align-content: left;
+position: absolute;
+padding-left: 20px;
+top: 25px;
+}
+
+ul li{
+list-style: none;
+display: inline-block;
+text-transform: uppercase;
+padding-right: 30px;
+}
+
+.menu ul li a{
+text-decoration: none;
+color: #262626;
+position: relative;
 }
 
 .menu{
-  display: grid;
-  width: 100%;
-  height: 50px;
-  grid-template-areas: "logo nav";
-  grid-template-columns: 10% 90%;
-  padding-top: 5px;
-  position: fixed;
-  background-color: #FCFCFC;
-  width: 100%;
-  padding: auto;
-  margin-top: -60px;
-  
-}
-.menu > nav{
-  grid-area: nav;
-  justify-content: flex-end;
-  align-self: center;
-  justify-self: end;
+text-align: right;
+padding-top: 30px;
+padding-right: 10px;
 }
 
-header{
-    background: #FCFCFC;
+.box{
+background-color: #fcfcfc;
+width: 100%;
+height: 100px;
+font-family: Arial, Helvetica, sans-serif;
+position: absolute;
+z-index: 1;
+margin-top: -20px;
+position: fixed;
 }
 
-header ::after{
-    content: '';
-    display: flex;
-    clear: both;
-}
-nav ul{
-    display: inline-flex;
-    margin: 0;
-    padding: 15px;
-    list-style: none;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-nav li{
-    margin-left: 5px;
-    margin-right: 5px;
-    font-display: inherit;
-
-}
-
-nav a{
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
+nav{
+text-align: right;
 }
 
 ul li a::before{
-    content: '';
-    width: 10px;
-    height: 1px;
-    background: black;
-    position: absolute;
-    top: 35px; left: 10px;
-    transition: .5s;
-    margin-top: 5px;
-    opacity: 0;
-
+content: '';
+width: 10px;
+height: 1px;
+background: black;
+position: absolute;
+top: 100%;
+left: 0%;
+transition: .5s;
+margin-top: 5px;
+opacity: 0;
 }
 
 ul li:hover a::before{
-    width: 50%;
-    transform: translate(100%);
-    opacity: 1;
+width: 50%;
+transform: translate(100%);
+opacity: 1;
+}
+
+.burger{
+display: none;
 }
 
 
@@ -98,7 +88,8 @@ ul li:hover a::before{
                          "picn picn picm pico pico picp picp pick";
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-    margin-top: 60px;
+    position: relative;
+    top: 85px;
     grid-gap: 2px;
   }
   
@@ -108,6 +99,7 @@ ul li:hover a::before{
     background-image: url(paysage.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic2 {
@@ -116,6 +108,7 @@ ul li:hover a::before{
     background-image: url(paysage2.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic3 {
@@ -124,6 +117,7 @@ ul li:hover a::before{
     background-image: url(paysage3.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic4 {
@@ -132,6 +126,7 @@ ul li:hover a::before{
     background-image: url(paysage4.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic5 {
@@ -140,6 +135,7 @@ ul li:hover a::before{
     background-image: url(paysage5.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic6 {
@@ -148,6 +144,7 @@ ul li:hover a::before{
     background-image: url(paysage6.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic7 {
@@ -156,6 +153,7 @@ ul li:hover a::before{
     background-image: url(paysage7.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic8 {
@@ -164,6 +162,7 @@ ul li:hover a::before{
     background-image: url(paysage8.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
 
   #Categorie1 > .Pic9 {
@@ -172,6 +171,7 @@ ul li:hover a::before{
     background-image: url(paysage9.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic10 {
@@ -180,6 +180,7 @@ ul li:hover a::before{
     background-image: url(paysage10.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic11 {
@@ -188,6 +189,7 @@ ul li:hover a::before{
     background-image: url(paysage11.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic12 {
@@ -196,6 +198,7 @@ ul li:hover a::before{
     background-image: url(paysage12.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
 
   #Categorie1 > .Pic13 {
@@ -204,6 +207,7 @@ ul li:hover a::before{
     background-image: url(paysage13.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic14 {
@@ -212,6 +216,7 @@ ul li:hover a::before{
     background-image: url(paysage14.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic15 {
@@ -220,6 +225,7 @@ ul li:hover a::before{
     background-image: url(paysage15.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie1 > .Pic16 {
@@ -228,6 +234,71 @@ ul li:hover a::before{
     background-image: url(paysage16.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
+  }
+
+  #Categorie1 > .Pic1:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic2:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic3:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic4:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic5:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic6:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic7:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic8:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic9:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic10:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic11:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic12:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic13:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic14:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic15:hover{
+    opacity: .8;
+  }
+
+  #Categorie1 > .Pic16:hover{
+    opacity: .8;
   }
 
 /*Galerie Deuxième Catégorie*/
@@ -243,7 +314,7 @@ ul li:hover a::before{
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     grid-gap: 2px;
-    margin-top: 8px;
+    margin-top: 95px;
 
   }
   
@@ -253,6 +324,7 @@ ul li:hover a::before{
     background-image: url(panda.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic2 {
@@ -261,6 +333,7 @@ ul li:hover a::before{
     background-image: url(panda2.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic3 {
@@ -269,14 +342,16 @@ ul li:hover a::before{
     background-image: url(panda3.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic4 {
     grid-area: picd;
     background-color: #8cffa0;
-    background-image: url(panda4.png);
+    background-image: url(panda4.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic5 {
@@ -285,14 +360,16 @@ ul li:hover a::before{
     background-image: url(panda5.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic6 {
     grid-area: picf;
     background-color: #ffa08c;
-    background-image: url(panda6.jpeg);
+    background-image: url(panda6.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic7 {
@@ -301,6 +378,7 @@ ul li:hover a::before{
     background-image: url(panda7.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic8 {
@@ -309,6 +387,7 @@ ul li:hover a::before{
     background-image: url(panda8.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
 
   #Categorie2 > .Pic9 {
@@ -317,6 +396,7 @@ ul li:hover a::before{
     background-image: url(panda9.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic10 {
@@ -325,6 +405,7 @@ ul li:hover a::before{
     background-image: url(panda10.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic11 {
@@ -333,6 +414,7 @@ ul li:hover a::before{
     background-image: url(panda11.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic12 {
@@ -341,6 +423,7 @@ ul li:hover a::before{
     background-image: url(panda12.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
 
   #Categorie2 > .Pic13 {
@@ -349,6 +432,8 @@ ul li:hover a::before{
     background-image: url(panda13.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
+    
   }
   
   #Categorie2 > .Pic14 {
@@ -357,6 +442,7 @@ ul li:hover a::before{
     background-image: url(panda14.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic15 {
@@ -365,6 +451,7 @@ ul li:hover a::before{
     background-image: url(panda15.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
   
   #Categorie2 > .Pic16 {
@@ -373,7 +460,345 @@ ul li:hover a::before{
     background-image: url(panda16.jpg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
   }
+
+  #Categorie2 > .Pic1:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic2:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic3:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic4:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic5:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic6:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic7:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic8:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic9:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic10:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic11:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic12:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic13:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic14:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic15:hover{
+    opacity: .8;
+  }
+
+  #Categorie2 > .Pic16:hover{
+    opacity: .8;
+  }
+
+/*Galerie Troisième Catégorie*/
+
+#Categorie3 {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "pica pica picb picb picc picc picd picd"
+                       "pice picf picf picg picc picc pici picj"
+                       "pice picl picm picg pich pich pici pick"
+                       "picn picn picm pico pico picp picp pick";
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-gap: 2px;
+  margin-top: 10px;
+
+}
+
+#Categorie3 > .Pic1 {
+  grid-area: pica;
+  background-color: #8ca0ff;
+  background-image: url(city.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic2 {
+  grid-area: picb;
+  background-color: #ffa08c;
+  background-image: url(city2.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic3 {
+  grid-area: picc;
+  background-color: #ffff64;
+  background-image: url(city3.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic4 {
+  grid-area: picd;
+  background-color: #8cffa0;
+  background-image: url(city4.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic5 {
+  grid-area: pice;
+  background-color: #8ca0ff;
+  background-image: url(city5.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic6 {
+  grid-area: picf;
+  background-color: #ffa08c;
+  background-image: url(city6.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic7 {
+  grid-area: picg;
+  background-color: #ffff64;
+  background-image: url(city7.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic8 {
+  grid-area: pich;
+  background-color: #8cffa0;
+  background-image: url(city8.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic9 {
+  grid-area: pici;
+  background-color: #8ca0ff;
+  background-image: url(city9.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic10 {
+  grid-area: picj;
+  background-color: #ffa08c;
+  background-image: url(city10.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic11 {
+  grid-area: pick;
+  background-color: #ffff64;
+  background-image: url(city11.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic12 {
+  grid-area: picl;
+  background-color: #8cffa0;
+  background-image: url(city12.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic13 {
+  grid-area: picm;
+  background-color: #8ca0ff;
+  background-image: url(city13.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  
+}
+
+#Categorie3 > .Pic14 {
+  grid-area: picn;
+  background-color: #ffa08c;
+  background-image: url(city14.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic15 {
+  grid-area: pico;
+  background-color: #ffff64;
+  background-image: url(city15.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic16 {
+  grid-area: picp;
+  background-color: #8cffa0;
+  background-image: url(city16.jpg);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+#Categorie3 > .Pic1:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic2:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic3:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic4:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic5:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic6:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic7:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic8:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic9:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic10:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic11:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic12:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic13:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic14:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic15:hover{
+  opacity: .8;
+}
+
+#Categorie3 > .Pic16:hover{
+  opacity: .8;
+}
+
+
+  /*MODAL*/
+
+  #modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+/* Modal Content (image) */
+#modal-content {
+  margin: auto;
+  display: block;
+  width: 85%;
+  max-width: 700px;
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+  /* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;}
+
 
   /*FOOTER*/
 
@@ -528,103 +953,107 @@ ul li:hover a::before{
 
     /*Responsive Mobile*/
 
-@media (max-width:720px){
+    @media (max-width:720px){
 
-  /*Barre de Navigation*/
+      /*Barre de Navigation*/
+    
+      .box
+      {
+      background:#FCFCFC;
+      color:#262626;
+      position:fixed;
+      width: 100%;
+    
+      }
+      
+      .box .burger
+      {
+      display: block;
+      appearance:none;
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      color:inherit;
+      cursor:pointer;
+      font-family:'Material Icons';
+      font-size:30px;
+      line-height:50px;
+      margin:0;
+      outline:0;
+      padding:0;
+      position:absolute;
+      text-align:center;
+      top:30px;
+      right:10px;
+      width:50px;
+      }
+      
+      .box .burger:before
+      {
+        content:'menu';
+      }
+    
+      .box .burger:checked:before
+      {
+      content:'X'; 
+      }
+      
+      .box nav
+      {
+      background:#FCFCFC;
+      height:0;
+      overflow:hidden;
+      text-transform:uppercase;
+      transition:height .8s;
+      text-align: center;
+      display: flex;
+      }
+      
+      .box nav > *
+      {
+      flex-direction: column;
+      letter-spacing:.5px;
+      line-height:2;
+      padding-top: 50%;
+      width: 100vh;
+      }
+      
+      nav li{
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      }
+    
+      .burger:checked + nav
+      {
+      height:calc(110vh);
+      width: 100vw;
+      }
+      
+      nav a{
+      font-size: 160%;
+      }
+    
+      ul li a::before{
+        content: '';
+        width: 15%;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transition: .5s;
+        margin-top: -7.5px;
+        opacity: 0;
+      }
+      
+      ul li:hover a::before{
+        width: 33.4%;
+        transform: translate(100%);
+        opacity: 1;
+        
+      }
 
-  .menu
-  {
-  background:#FCFCFC;
-  color:#222;
-  height:50px;
-  position:fixed;
-  width: 100%;
-  height: 50px;
-  }
-
-  .menu{
-    height: 50px;
-  }
-  
-  .menu > #logo{
-    position: relative;
-    top: 15px;
-    margin: -50px;
-  }
-
-  .menu .burger
-  {
-  display: block;
-  appearance:none;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  color:inherit;
-  cursor:pointer;
-  font-family:'Material Icons';
-  font-size:30px;
-  line-height:50px;
-  margin:0;
-  outline:0;
-  padding:0;
-  position:absolute;
-  text-align:center;
-  top:0;
-  right:10px;
-  width:50px;
-  }
-
-  .menu .burger:before
-  {
-  content:'Clic';
-  }
-
-  .menu .burger:checked:before
-  {
-  content:'X';
-  }
-
-  .menu nav
-  {
-  background:#FCFCFC;
-  height:0;
-  overflow:hidden;
-  text-transform:uppercase;
-  transition:height .8s;
-  text-align: center;
-  display: flex;
-
-  }
-
-  .menu nav > *
-  {
-  flex-direction: column;
-  letter-spacing:.5px;
-  line-height:2;
-  padding: 20px;
-  width: 100vh;
- 
-  }
-
-
-  nav li{
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-  }
-
-
-  .burger:checked + nav
-  {
-  height:calc(100vh);
-  width: 100vw;
-  }
-
-  nav a{
-    font-size: 160%;
-  }
-
-
-  /*catégori 1*/
+  /*catégorie photo 1*/
 
   #Categorie1 {
     display: grid;
@@ -648,8 +1077,10 @@ ul li:hover a::before{
                           "picp";
     grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh;
     grid-template-columns: 100vw;
-    margin-top: 60px;
+   
   }
+
+  /*catégorie photo 2*/
 
   #Categorie2 {
     display: grid;
@@ -673,9 +1104,37 @@ ul li:hover a::before{
                           "picp";
     grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh ;
     grid-template-columns: 100vw;
-    margin-top: 5000px;
+    margin-top: 5810px;
+}
+
+  /*catégorie photo 3*/
+
+#Categorie3 {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas: "pica"
+                        "picb"
+                        "picc"
+                        "picd"
+                        "pice"
+                        "picf"
+                        "picg"
+                        "pich"
+                        "pici"
+                        "picj"
+                        "pick"
+                        "picl"
+                        "picm"
+                        "picn"
+                        "pico"
+                        "picp";
+  grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh 50vh ;
+  grid-template-columns: 100vw;
+  margin-top: 5720px;
 }
 
   .footer1{
     margin-top: 5430px;
   }
+}

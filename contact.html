@@ -5,94 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <title>Contact</title>
 <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="contact.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="contact.css">
 
+<!--Police d'écriture logos réseaux sociaux FOOTER-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<!--Police d'écriture logo menu BURGER-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!--Police d'écriture Logo FOOTER-->
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 <!--===============================================================================================-->    
   
-    <title>Contact - Artiste.com</title>
+    
 </head>
 
-<body>
-    <header>
-            <div class="menu">
+<!-- Header/Barnav -->
+<header>
+    <div class="box">
+        <img src="https://i.postimg.cc/RhgLZrmj/Artboard-1.png" alt="logo" class="logo">
+        <input class="burger" type="checkbox">
         
-                <input class="burger" type="checkbox">
-                <nav>
-                    <ul>
-                            <li><a href="index.html">Home</a></li> 
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="articles.html">Articles</a></li>
-                            <li><a href="marketplace.html">Shop</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>    
-        </header>
+        <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="marketplace.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div> 
+           
+</header>
+
+<!-- Sticky Calendar -->
+
+<div class="wrapper">
+    <div class="contact-form-page">
+    <div class="form-head">
+        <div class="header-btn">
+            <a class="top-btn" href="#"><i class="fa fa-calendar"></i></a>
+        </div>
+    </div>
+    <ul class="dates">
+        <li>
+            <span class="date">MAR <strong>15</strong></span>
+            <h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
+            <p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+        </li>
+        <li>
+            <span class="date">MAR <strong>23</strong></span>
+            <h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
+            <p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
+        </li>
+        <li>
+            <span class="date">MAR <strong>28</strong></span>
+            <h3><a href="#">Magna tempus lorem feugiat</a></h3>
+            <p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
+        </li>
+        <li>
+            <span class="date">APR <strong>2</strong></span>
+            <h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
+            <p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
+        </li>
+        <li>
+            <span class="date">APR <strong>10</strong></span>
+            <h3><a href="#">Blandit tempus aliquam?</a></h3>
+            <p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+        </li>
+    </ul>        </div>
+    <a class="buttom-btn" href="#"><i class="fa fa-calendar"></i></a>
+</div>
+
 
 <!--===============================================================================================-->    
 <!--================================ FORMULAIRE ===================================================-->    
 <!--===============================================================================================-->    
-
+<div id="formulaire">
     <div class="contact-header">
 
-        <p>CONTACT</p>
+        <p></p>
 
     </div>
     <section><br><br>
 
-            <div class="container">
-                <form>
+        <div class="container">
+            <form>
 
-                    <div class="form-row">
-                        <div class="form-group col-md-5">
-                            <label for="inputname">Name :</label>
-                                <input type="text" class="form-control" id="inputname" placeholder="Your name">
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5 name-form">
+                        <label for="inputname">Name :</label>
+                            <input type="text" class="form-control" id="inputname" placeholder="Your name">
                     </div>
+                </div>
 
-                    <div class="form-row">
-                        <div class="form-group col-md-5">
-                            <label for="inputmail">Email :</label>
-                                <input type="email" class="form-control" id="inputmail" placeholder="Email">
-                        </div>   
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="inputmail">Email :</label>
+                            <input type="email" class="form-control" id="inputmail" placeholder="Email">
+                    </div>   
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="inputtopic">What are you looking for ?</label>
+                            <select id="inputtopic" class="form-control form-control-lg">
+                                <option selected>Choose here</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
                     </div>
+                </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="inputtopic">What are you looking for ?</label>
-                                <select id="inputtopic" class="form-control form-control-lg">
-                                    <option selected>Choose here</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                    <option>...</option>
-                                </select>
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="Textarea">Your message :</label>
+                            <textarea class="form-control" id="Textarea" placeholder="Message required" rows="3" ></textarea>
                     </div>
+                </div><br>
 
-                    <div class="form-row">
-                        <div class="form-group col-md-12">
-                            <label for="Textarea">Your message :</label>
-                                <textarea class="form-control" id="Textarea" placeholder="Message required" rows="3" ></textarea>
-                        </div>
-                    </div><br>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-1">
-                            <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
-                        </div>
+                <div class="form-row">
+                    <div class="form-group col-md-1 ">
+                        <button type="submit" class="btn btn-outline-primary btn-lg" onclick="alert('Thanks for your message !');">Submit</button>
                     </div>
-                    
+                </div>
+                
 
-                </form>
-            </div>
-
+            </form>
+        </div>
     </section><br>
+</div>
 
 
 <!--===============================================================================================-->    
@@ -102,12 +152,12 @@
     <div class="encart-contact">
 
         <div class="part-contact">
-                <p>
-                    <span>
-                        CONTACT
+                <p class="Place1">
+                    <span class="find-me-tittle">
+                        FIND ME :
                     </span><br>
-                    <span class="nom-prenom"><br>
-                        John Doe
+                    <span class="Lieu"><br>
+                        Atelier John Doe
                     </span>
                     <span class="adress-1"><br>
                         11 Rue de Poissy
@@ -118,76 +168,93 @@
                     <span class="phone"><br>
                         01-23-45-67-89
                     </span>
+                    <span class="horaires"><br>
+                        Du Mardi au Samedi ( 9H-12H / 14H-19H )
+                    </span>
+                </p>
+                <p class="Place2">
+                    <span class="Lieu"><br>
+                        Concept Store John Doe
+                    </span>
+                    <span class="adress-1"><br>
+                        11 Rue de Lobau
+                    </span>
+                    <span class="adress-2"><br>
+                        75004 PARIS
+                    </span>
+                    <span class="phone"><br>
+                        09-87-65-43-21
+                    </span>
+                    <span class="horaires"><br>
+                        Du Lundi au Vendredi ( 9H-12H / 14H-19H )
+                    </span>
                 </p>
         </div>
 
         <div class="part-maps">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.4787828736194!2d2.350665515825274!3d48.84907987928669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e4fa5fdbf9%3A0x5dcb5a09cff26472!2s11+Rue+de+Poissy%2C+75005+Paris!5e0!3m2!1sfr!2sfr!4v1551975925618"  style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1uOsdDbkU9_MJckRiUEFSqgPQZgTlp6tD" width="640" height="480"></iframe>       
         </div>
 
     </div>
 
-
     <footer class="footer1">
-            <!-- left footer -->
+        <!-- left footer -->
         <div class="footer-left">
-            
-            <h3>John<span> doe</span></h3>
-            <!-- Link/ancre*-->
-            <p class="footer-links">
-            <a href="#">Home</a> ·
-            <a href="#">Blog</a> ·
-            <a href="#">Prices</a> ·
-            <a href="#">About</a> ·
-            <a href="#">Faq</a> .
-            <a href="#">Contact</a>
-            </p>
-            
-            <p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
+        
+        <h3>John<span> doe</span></h3>
+        <!-- Link/ancre*-->
+        <p class="footer-links">
+        <a href="index.html">Home</a> ·
+        <a href="gallery.html">Gallery</a> ·
+        <a href="shop.html">Articles</a> ·
+        <a href="https://www.bobross.com/" target="_blank" >Blog</a> ·
+        <a href="faq">Faq</a> .
+        <a href="contact.html">Contact</a>
+        </p>
+        
+        <p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
         </div>
-            <!-- mid footer-->
+        <!-- mid footer-->
         <div class="footer-center">
-            
+        
         <div>
-            <i class="fa fa-map-marker"></i>
-            <p><span>11 rue de poissy</span> Paris 75005</p>
+        <i class="fa fa-map-marker"></i>
+        <p><span>11 rue de poissy</span> Paris 75005</p>
         </div>
-            
+        
         <div>
-            <i class="fa fa-phone"></i>
-            <p>01-23-45-67-89 </p>
+        <i class="fa fa-phone"></i>
+        <p>06-43-41-02-65</p>
         </div>
-            
-        <div>
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:les.casseurs flowters.support@gmail.com">les.casseurs flowters.support@gmail.com</a></p>
+        
+        
+        
         </div>
-            
-        </div>
-            <!-- right footer -->
+        <!-- right footer -->
         <div class="footer-right">
-            
-            <p class="footer-company-about">
-            <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-            </p>
-            
+        
+        <p class="footer-company-about">
+        <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        
         <div class="footer-icons">
-            
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-            
+        
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://fr.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
+        
         </div>
-            
-        </div>
-
+        
+        </div>        
+       
     </footer>
 
 <!--===============================================================================================-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src ="scriptcontact.js"></script>
 <!--===============================================================================================-->
 
 </body>

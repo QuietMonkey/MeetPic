@@ -1,107 +1,306 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet"  type="text/CSS" href="marketplace.css">
     <title>Marketplace</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"  type="text/CSS" href="marketplace.css">
+
+    <!--Police d'écriture logos réseaux sociaux FOOTER-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!--Police d'écriture logo menu BURGER-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Police d'écriture Logo FOOTER-->
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    <header>
-            <div class="menu">
-    
-           
-                    <input class="burger" type="checkbox">
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li> 
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="articles.html">Articles</a></li>
-                            <li><a href="marketplace.html">Shop</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>    
-    
-       
-    </header>
-        
 
+<!-- Header/Barnav -->
+<header>
+    <div class="box">
+        <img src="https://i.postimg.cc/RhgLZrmj/Artboard-1.png" alt="logo" class="logo">
+        <input class="burger" type="checkbox">
+        
+        <nav>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="marketplace.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div> 
+           
+</header>
+
+        
+    <!--Section 1-->
     <section>
         <div class="bat">
-            <h4>SHOP</h4>
-            <br/>
-            <p>
-                Tirage d'art - Edition limited<br/>
-                Experienced, tested and adored by photographers around the world, the Casseur Flowters Lens has been designed to chase the sun.<br/> 
-                With a perfect focal length of 32mm, a f / 2.5 speed and unique rotating aperture ring, it will liven up your explorer soul. Join the hundreds of contributors who made this project a success and book yours at a reduced price as long as there is still time!</p>
+            
+                <h3>Tirage d'art - Edition limited</h3>
+                    <p>
+                    Experienced, tested and adored by photographers around the world, the Casseur Flowters Lens has been designed to chase the sun.<br/> 
+                    With a perfect focal length of 32mm, a f / 2.5 speed and unique rotating aperture ring, it will liven up your explorer soul. Join the hundreds of contributors who made this project a success and book yours at a reduced price as long as there is still time!
+                    </p>
         </div>
         <div class="contenaire">
             <div class="magic">
                 <div class="ldm">
                     
-                      <img src="https://cdn.pixabay.com/photo/2018/07/01/13/14/nature-3509454_640.jpg" alt="coucou" />
-                    
-                    <br/>
-                    
-                    <p>
-                        <strong>Nature</strong><br/><br/>
-                        Starting from 250 $</p>
-                    
-                    <p>
-                    Buy it to let me buy this school ! 
-                    </p>
+                      <div class="card" style="width: 18rem;">
+                            <img src="https://cdn.pixabay.com/photo/2018/07/01/13/14/nature-3509454_640.jpg" class="card-img-top photo" alt="card1">
+                            <div class="card-body">
+                              <h5 class="card-title">Shooting photo de famille</h5>
+                              <p class="card-text">Pour en profiter, rien de plus simple : Choisissez l'offre qui vous convient le mieux parmi celles proposées ci-dessous, et contactez-nous pour prendre rendez-vous pour une séance photo.</p>
 
-                    <button type="button" class="btn btn-outline-primary">Reserve</button>
+                                                    <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Reserve
+                                    </button>
+                                
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+            
+                                            <div class="modal-header">
+            
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Information paiement</h5>
+                                                
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+            
+                                            <div class="modal-body">
+                                                <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+                                                <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+                                                <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+                                                <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+                                                <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+                                                
+                                                <div class="card-wrapper"></div>
+                                            
+                                                <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+                                                <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+                                                <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+                                                <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+                                               
+        
+    
+                                            </div>
+            
+                                            <div class="modal-footer">
+            
+                                                
+                                                <button type="button" class="btn btn-primary">Valider</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                            </div>
+                          </div>
+                    
+                               
                 </div>
                 <div class="ldm"> 
-                    <img src="https://images.unsplash.com/photo-1521117177129-ca6b2e68cb26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="mak" /><br/>
-                    <p>
-                        <strong>Portrait</strong><br/><br/>
-                        Starting from 300 $</p>
+
+                    <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1521117177129-ca6b2e68cb26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" class="card-img-top photo" alt="card2">
+                            <div class="card-body">
+                              <h5 class="card-title">Photographe mariage</h5>
+                              <p class="card-text">Ne ratez pas une occasion unique de réaliser de magnifiques photos de cette journée où vous vous direz Oui ! S'offrir les services d'un photographe de mariage, 
+                                  c'est s'assurer d'un reportage photo. </p>
+
+
+                                        <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                        Reserve
+                                    </button>
+                                
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+            
+                                            <div class="modal-header">
+            
+                                                <h5 class="modal-title" id="exampleModalCenterTitle">Information paiement</h5>
+                                                
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+            
+                                            <div class="modal-body">
+                                                <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+                                                <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+                                                <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+                                                <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+                                                <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+                                                
+                                                <div class="card-wrapper"></div>
+                                            
+                                                <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+                                                <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+                                                <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+                                                <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+                                               
+                                            </div>
+            
+                                            <div class="modal-footer">
+            
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                
+                                                <button type="button" class="btn btn-primary">Valider</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>        
                     
-                
-                    <p>
-                        Please buy for my card
-                    </p>
-                    <a href="https://www.google.com"><button type="button" class="btn btn-outline-primary">Reserve</button></a>
                 </div>
             </div>
             <div class="gringe">
-                <div class="ld">
+                <div class="ld">  
 
-                    <img src="https://images.unsplash.com/photo-1551415923-a2297c7fda79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" alt="tal"/><br/>
-                    <p>
-                        <strong>Animals</strong><br/><br/>
-                        Starting from 100 $</p>
+                    <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1551415923-a2297c7fda79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80" class="card-img-top photo" alt="card3">
+                            <div class="card-body">
+                              <h5 class="card-title">Atelier retouche</h5>
+                              <p class="card-text">La retouche est aujourd'hui devenu un Art ! Grâce à une initiation organisée dans les Ateliers de Casseurs Flowters, 
+                                  Batignolles et Convention, découvrez la retouche et entrez dans la magie de l'image.</p>
+
+                        <div class="button3">
+                                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                    Reserve
+                            </button>
+                        </div>
                     
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Information paiement</h5>
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+
+                                </div>
+                                <div class="modal-body">
+                                    <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+                                    <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+                                    <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+                                    <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+                                    <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+                                    
+                                    <div class="card-wrapper"></div>
+                                
+                                    <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+                                    <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+                                    <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+                                    <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+                                   
+                                </div>
+                                <div class="modal-footer">
+
+                                    
+
+                                    <button type="button" class="btn btn-primary">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </div>
+                                    </div>
                     
-                    <p>
-                        Buy it for the poor children 
-                    </p>
-                    <button type="button" class="btn btn-outline-primary">Reserve</button>
                 </div>
                 <div class="ld">
-                    <img src="https://images.unsplash.com/photo-1486607303850-bc051a4ffad4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"  alt="clate"/><br/>
-                    <p>
-                        <strong>City</strong><br/><br/>
-                        Starting from 100 $</p>
-                    <p>
-                        Lunette noir parce que je matte des boules, je suis déchiré je sens pas les coups.
-                        Un jour j'ai ramené 2 meufs ça me rappelle que j'ai du mal avec une.
-                    </p>
-                    <button type="button" class="btn btn-outline-primary">Reserve</button>
+                    
+                    <div class="card" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1486607303850-bc051a4ffad4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80" class="card-img-top photo" alt="card4">
+                            <div class="card-body">
+                              <h5 class="card-title">Formation photographe</h5>
+                              <p class="card-text">Casseurs Flowters propose des formations organisées en modules de 2 jours programmés toute l'année, 
+                                  qui s'adressent à des salariés qui travaillant dans le domaine de la communication, créateurs...</p>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" cl>
+                                            Reserve
+                                    </button>
+                                    
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+
+                                                    <h5 class="modal-title" id="exampleModalCenterTitle">Je te dis de payer</h5>
+
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+                                                    <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+                                                    <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+                                                    <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+                                                    <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+                                                    
+                                                    <div class="card-wrapper"></div>
+                                                
+                                                    <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+                                                    <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+                                                    <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+                                                    <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+                                                   
+                                                </div>
+                                                <div class="modal-footer">
+
+                                                
+
+
+                                                <button type="button" class="btn btn-primary">Valider</button>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                          </div>
+                    
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer1">
-            <!-- left footer -->
-            <div class="footer-left">
-            
+        <!-- left footer -->
+        <div class="footer-left">
+
             <h3>John<span> doe</span></h3>
             <!-- Link/ancre*-->
             <p class="footer-links">
@@ -112,60 +311,46 @@
             <a href="#">Faq</a> .
             <a href="#">Contact</a>
             </p>
-            
-            <p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
-            </div>
-            <!-- mid footer-->
-            <div class="footer-center">
-            
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p>
-                    <span>11 rue de poissy</span> Paris 75005</p>
-            </div>
-            
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>phone de la wild</p>
-            </div>
-            
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p>
-                    <a href="mailto:les.casseurs flowters.support@gmail.com">les.casseurs flowters.support@gmail.com</a>
-                </p>
-            </div>
-            
-            </div>
-            <!-- right footer -->
-            <div class="footer-right">
-            
-            <p class="footer-company-about">
-                <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-            </p>
-            
-            <div class="footer-icons">
-            
-            <a href="#">
-                <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-github"></i>
-            </a>
-            
-            </div>
-            
-            </div>
-            
-            </footer>
 
-    </footer>
+            <p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
+        
+        </div>
+        <!-- mid footer-->
+        <div class="footer-center">
+        
+        <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>11 rue de poissy</span> Paris 75005</p>
+        </div>
+        
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>Tel: 06.25.48.96.35</p>
+        </div>
+        
+        
+        </div>
+        <!-- right footer -->
+        <div class="footer-right">
+        
+        <p class="footer-company-about">
+        <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        
+        <div class="footer-icons">
+        
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+        
+        </div>
+        
+        </div>
+        
+        </footer>
+   
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
