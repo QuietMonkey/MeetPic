@@ -7,6 +7,222 @@ font-family: Arial, Helvetica, sans-serif;
 font-weight: 300;
 }
 
+/* Sticky Calendar */
+
+.contact-form-page{
+  height: 50px;
+  width: 50px;
+  display: block;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 42px;
+  right: 42px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #262626;
+
+}
+
+.show-profile{
+  background: #262626;
+  height: 87%;
+  display: block;
+  width: 336px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  overflow-y: scroll;
+  border-radius: 0;
+  z-index: 5;
+}
+
+.form-profile-img{
+  float: left;
+}
+
+.form-profile-img img{
+  border-radius: 50%;
+  margin: 20px 0 0 14px;
+}
+
+.top-btn{
+position: absolute;
+top: 15px;
+right: 15px;
+background: #d52349;
+color: #fff;
+padding: 15px 0;
+text-align: center;
+width: 60px;
+height: 30px;
+border-radius: 50%;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: all 1s;
+-moz-transition: all 1s;
+-o-transition: all 1s;
+transition: all 1s;
+opacity: 0;
+}
+
+.top-btn:hover{
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+background: #d52349;
+color: #fff
+}
+
+.header-btn, .footer-btn a{
+font-size: 20px;
+color: #fff;
+background: #122;
+float: right;
+}
+
+.form-head{
+display: block;
+}
+
+.cancel-btn-img{
+position: relative;
+}
+
+.footer-btn{
+position: relative;
+}
+
+.buttom-btn{
+position: fixed;
+bottom: 30px;
+right: 30px;
+background: #d52349;
+color: #fff;
+padding: 21px;
+text-align: center;
+border-radius: 50%;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+opacity: 1;
+z-index: 5;
+}
+.buttom-btn i{
+font-size: 30px;
+}
+
+.buttom-btn:hover{
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+transform: rotate(360deg);
+background:#d52349;
+color: #fff
+}
+
+/* BUTTON OPACITY STYLE */
+
+.top-btn-show{
+z-index: 5;
+opacity: 1 !important;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+.buttom-btn-hide{
+opacity: 0 !important;
+-webkit-transition: all 0.5s;
+-moz-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+}
+
+/* DATES */
+
+.wrapper ul.dates {
+list-style: none;
+padding-left: 0;
+}
+
+.wrapper ul.dates li {
+position: relative;
+border-top: solid 1px #ddd;
+padding: 1.3em 0 1.3em 6.75em;
+text-transform: none;
+
+
+}
+
+.wrapper ul.dates .date {
+display: block;
+position: absolute;
+left: 0;
+top: 1.3em;
+background-color: #d52349;
+height: 3.1em;
+text-align: center;
+color: #fff;
+line-height: 1em;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+padding: 0.5em 0.75em 0 1em;
+
+}
+
+.wrapper ul.dates .date:after {
+content: '';
+position: absolute;
+bottom: 0;
+right: -1.2em;
+border-left: solid 1.25em #d52349;
+border-top: solid 1.8em transparent;
+border-bottom: solid 1.8em transparent;
+}
+
+.wrapper ul.dates .date strong {
+display: block;
+font-size: 1.75em;
+padding-top: 0.15em;
+}
+
+.wrapper ul.dates h3 {
+font-size: 1.1em;
+
+}
+
+.wrapper ul.dates p {
+margin: 0;
+color: #FFFFFF;
+font-size: 0.9em;
+
+}
+
+.wrapper ul.dates li:first-child {
+border-top: 0;
+padding-top: 25%;
+}
+
+.wrapper ul.dates li:first-child .date {
+top: 5;
+}
+
+.wrapper ul.dates li a {
+color: #FCFCFC;
+text-decoration: none;
+}
+  
+
 /*NAVBAR*/
   
 .box .logo{
