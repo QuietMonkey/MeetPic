@@ -319,7 +319,7 @@ slide p{
     margin: 0;
     }
     
-    .footer1{
+    #footer1{
         background-color: #292C2F;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
         box-sizing: border-box;
@@ -336,7 +336,7 @@ slide p{
         
         /* Footer left */
         
-        .footer-left{
+        #footer-left{
         display: inline-block;
         vertical-align: top;
         width: 40%;
@@ -344,32 +344,32 @@ slide p{
         
         /* The company logo */
         
-        .footer1 h3{
+        #footer1 h3{
         color: #FFFFFF;
         font: normal 36px 'Cookie', cursive;
         margin: 0;
         }
         
-        .footer1 h3 span{
+        #footer1 h3 span{
         color: #5383D3;
         }
         
         /* Footer links */
         
-        .footer-links{
+        #footer-links{
         color: #FFFFFF;
         margin: 20px 0 12px;
         padding: 0;
         }
         
-        .footer-links a{
+        #footer-links a{
         display:inline-block;
         line-height: 1.8;
         text-decoration: none;
         color: inherit;
         }
         
-        .footer-company-name{
+        #footer-company-name{
         color: #8F9296;
         font-size: 14px;
         font-weight: normal;
@@ -378,13 +378,13 @@ slide p{
         
         /* Footer Center */
         
-        .footer-center{
+        #footer-center{
         display: inline-block;
         vertical-align: top;
         width: 35%;
         }
         
-        .footer-center i{
+        #footer-center i{
         background-color: #33383B;
         color: #FFFFFF;
         font-size: 25px;
@@ -397,26 +397,26 @@ slide p{
         vertical-align: middle;
         }
         
-        .footer-center i.fa-envelope{
+        #footer-center i.fa-envelope{
         font-size: 17px;
         line-height: 38px;
         }
         
-        .footer-center p{
+        #footer-center p{
         display: inline-block;
         color: #FFFFFF;
         vertical-align: middle;
         margin:0;
         }
         
-        .footer-center p span{
+        #footer-center p span{
         display:block;
         font-weight: normal;
         font-size:14px;
         line-height:2;
         }
         
-        .footer-center p a{
+        #footer-center p a{
         color: #5383D3;
         text-decoration: none;;
         }
@@ -424,13 +424,13 @@ slide p{
         
         /* Footer Right */
         
-        .footer-right{
+        #footer-right{
         display: inline-block;
         vertical-align: top;
         width: 20%;
         }
         
-        .footer-company-about{
+        #footer-company-about{
         line-height: 20px;
         color: #92999F;
         font-size: 13px;
@@ -438,7 +438,7 @@ slide p{
         margin: 0;
         }
         
-        .footer-company-about span{
+        #footer-company-about span{
         display: block;
         color: #FFFFFF;
         font-size: 14px;
@@ -446,11 +446,11 @@ slide p{
         margin-bottom: 20px;
         }
         
-        .footer-icons{
+        #footer-icons{
         margin-top: 25px;
         }
         
-        .footer-icons a{
+        #footer-icons a{
         display: inline-block;
         width: 35px;
         height: 35px;
