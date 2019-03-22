@@ -49,3 +49,17 @@ arrowRight.addEventListener('click', function (){
 });
 
 startSlider();
+
+
+//js footer
+function myFunction() {
+  document.getElementById("footer1").style.backgroundColor = "#011a26" ;
+  document.querySelector("header>.box").style.backgroundColor = "#011a26";
+  document.getElementById("three").style.backgroundColor = "#011a26";
+  document.getElementById("box").style.color = "#ffffff";
+  document.getElementById("sectionII").style.backgroundColor = "#011a26";
+  document.getElementById("sectionII").style.color = "#ffffff"
+  }
+  
+
+  

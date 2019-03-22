@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>John Doe Photographer</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="meetPic1.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <!--Police d'écriture logos réseaux sociaux FOOTER-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
     <!--Police d'écriture logo menu BURGER-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    
     <!--Police d'écriture Logo FOOTER-->
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    
+    <!--Police d'écriture Logo card-->
+    <link rel="stylesheet" href="meetPic1.css">
+    
 
 </head>
 <body>
@@ -26,6 +28,7 @@
 
 <!-- Header/Barnav -->
 <header>
+   
     <div class="box">
         <img src="https://i.postimg.cc/RhgLZrmj/Artboard-1.png" alt="logo" class="logo">
         <input class="burger" type="checkbox">
@@ -42,7 +45,7 @@
         </div>
         </nav>
     </div> 
-       
+  
 </header>
 
 
@@ -90,10 +93,13 @@
     <div class="card">
         <div class="box">
             <img src="https://i.postimg.cc/RhrYSXRC/John-Doe.jpg" alt="john doe" class="picture">
-
             <h2>John Doe</h2>
-
-            <p class="profil">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <!--<p class="profil">Photography takes an instant out of time, altering life by holding it still.</p>-->
+            <div class="social-media">
+                <a href="#" class="fa-twitter fa-2x"></a>
+                <a href="#" class="fa-instagram fa-2x"></a>
+                <a href="#" class="fa-facebook fa-2x"></a>
+            </div>
         </div>
     </div>
 </section>
@@ -114,7 +120,6 @@
     <div id="sectionII">
 
         <div class="case">
-
             <h3>
                 Order a Photo </br> for Free
             </h3>
@@ -123,12 +128,11 @@
             <div class="button-request">
                 <a href="shop.html" class="request">REQUEST A PHOTO</a>
             </div>
-
-            <div class="studio">
-                <img src="https://i.postimg.cc/gcCCsg0p/photographer-106821-640.jpg" alt="photographer" class="si">
-            </div>
-
         </div>
+
+    
+            
+            <div id="studio"></div>
 
     </div>
 </section>
@@ -237,26 +241,27 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="footer1">
+<div id="footer1">
 
     <!-- left footer -->
-    <div class="footer-left">
+    <div id="footer-left">
 
         <!-- Link/ancre*-->
-        <p class="footer-links">
+        <p id="footer-links">
             <a href="index.html">Home</a> ·
             <a href="gallery.html">Gallery</a> ·
-            <a href="shop.html">Articles</a> ·
+            <a href="articles.html">Articles</a> ·
             <a href="https://www.bobross.com/" target="_blank">Blog</a> ·
-            <a href="faq">Faq</a> .
+            <a href="faq.html">Faq</a> .
             <a href="contact.html">Contact</a>
+            
         </p>
 
-        <p class="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
+        <p id="footer-company-name">Company les Casseurs Flowters &copy; 2019</p>
     </div>
 
     <!-- mid footer-->
-    <div class="footer-center">
+    <div id="footer-center">
 
         <div>
             <i class="fa fa-map-marker"></i>
@@ -271,20 +276,22 @@
     </div>
 
     <!-- right footer -->
-    <div class="footer-right">
+    <div id="footer-right">
 
-        <p class="footer-company-about">
+        <p id="footer-company-about">
             <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod
             convallis velit, eu auctor lacus vehicula sit amet.
         </p>
 
-        <div class="footer-icons">
+        <div id="footer-icons">
 
             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
             <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="https://fr.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a>
-
+            
+            <button onclick="myFunction()"></button>
+        
         </div>
 
     </div>
@@ -309,3 +316,4 @@
 
 </body>
 </html> 
+
