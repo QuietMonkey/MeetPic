@@ -224,7 +224,7 @@ color: #FCFCFC
 
 /*NAVBAR*/
 
-header .box .logo{
+header #box .logo{
 height: 75%;
 align-content: left;
 position: absolute;
@@ -242,7 +242,7 @@ font-size: 16px;
 
 header .menu ul li a{
 text-decoration: none;
-color: #262626;
+
 position: relative;
 }
 
@@ -252,7 +252,7 @@ padding-top: 39px;
 padding-right: 10px;
 }
 
-header .box{
+header #box{
 background-color: #fcfcfc;
 width: 100%;
 height: 100px;
@@ -261,6 +261,7 @@ position: absolute;
 z-index: 1;
 margin-top: -15px;
 position: fixed;
+color: #262626;
 }
 
 nav{
@@ -514,7 +515,14 @@ color: white;
 
 /* START ARESKI */
 
+.gallery-container
+{
 
+margin-top:5%
+
+
+
+}
 .gallery-container h1 {
 text-align: center;
 margin-top: 70px;
@@ -575,7 +583,7 @@ margin: 0;
 
 /*////// FOOTER  ////////*/ 
 
-.footer1{
+#footer1{
 background-color: #292C2F;
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 box-sizing: border-box;
@@ -584,7 +592,7 @@ text-align: left;
 font: bold 16px sans-serif;
 
 padding: 55px 50px;
-margin-top: 80px;
+margin-top: 5%;
 display: inline-block;
 vertical-align: top;
 }
@@ -592,7 +600,7 @@ vertical-align: top;
 
 /* Footer left */
 
-.footer-left{
+#footer-left{
 display: inline-block;
 vertical-align: top;
 width: 40%;
@@ -600,31 +608,31 @@ width: 40%;
 
 /* The company logo */
 
-.footer1 h3{
+#footer1 h3{
 color: #FFFFFF;
 font: normal 36px 'Cookie', cursive;
 }
 
-.footer1 h3 span{
+#footer1 h3 span{
 color: #5383D3;
 }
 
 /* Footer links */
 
-.footer-links{
+#footer-links{
 color: #FFFFFF;
 margin: 20px 0 12px;
 padding: 0;
 }
 
-.footer-links a{
+#footer-links a{
 display:inline-block;
 line-height: 1.8;
 text-decoration: none;
 color: inherit;
 }
 
-.footer-company-name{
+#footer-company-name{
 color: #8F9296;
 font-size: 14px;
 font-weight: normal;
@@ -633,13 +641,13 @@ margin: 0;
 
 /* Footer Center */
 
-.footer-center{
+#footer-center{
 display: inline-block;
 vertical-align: top;
 width: 35%;
 }
 
-.footer-center i{
+#footer-center i{
 background-color: #33383B;
 color: #FFFFFF;
 font-size: 25px;
@@ -652,26 +660,26 @@ margin: 10px 15px;
 vertical-align: middle;
 }
 
-.footer-center i.fa-envelope{
+#footer-center i.fa-envelope{
 font-size: 17px;
 line-height: 38px;
 }
 
-.footer-center p{
+#footer-center p{
 display: inline-block;
 color: #FFFFFF;
 vertical-align: middle;
 margin:0;
 }
 
-.footer-center p span{
+#footer-center p span{
 display:block;
 font-weight: normal;
 font-size:14px;
 line-height:2;
 }
 
-.footer-center p a{
+#footer-center p a{
 color: #5383D3;
 text-decoration: none;;
 }
@@ -679,13 +687,13 @@ text-decoration: none;;
 
 /* Footer Right */
 
-.footer-right{
+#footer-right{
 display: inline-block;
 vertical-align: top;
 width: 20%;
 }
 
-.footer-company-about{
+#footer-company-about{
 line-height: 20px;
 color: #92999F;
 font-size: 13px;
@@ -693,7 +701,7 @@ font-weight: normal;
 margin: 0;
 }
 
-.footer-company-about span{
+#footer-company-about span{
 display: block;
 color: #FFFFFF;
 font-size: 14px;
@@ -701,11 +709,11 @@ font-weight: bold;
 margin-bottom: 20px;
 }
 
-.footer-icons{
+#footer-icons{
 margin-top: 25px;
 }
 
-.footer-icons a{
+#footer-icons a{
 display: inline-block;
 width: 35px;
 height: 35px;
@@ -764,9 +772,10 @@ margin-bottom: 5px;
 
   /*Barre de Navigation*/
 
-  .box
+  #box
   {
   background:#FCFCFC;
+  
   color:#262626;
   position:fixed;
   width: 100%;
@@ -774,8 +783,8 @@ margin-bottom: 5px;
 
   }
 
-  .box .burger
-  {
+  #box .burger
+  {color: #262626;
   display: block;
   appearance:none;
   -moz-appearance:none;
@@ -795,17 +804,17 @@ margin-bottom: 5px;
   width:50px;
   }
 
-  .box .burger:before
+  #box .burger:before
   {
   content:'menu';
   }
 
-  .box .burger:checked:before
+  #box .burger:checked:before
   {
   content:'X'; 
   }
 
-  .box nav
+  #box nav
   {
   background:#FCFCFC;
   height:0;
@@ -816,7 +825,7 @@ margin-bottom: 5px;
   display: flex;
   }
 
-  .box nav > *
+  #box nav > *
   {
   flex-direction: column;
   letter-spacing:.5px;
@@ -859,4 +868,10 @@ margin-bottom: 5px;
   transform: translate(100%);
   opacity: 1;
   }
+}
+#footer-icons button
+{
+border: none;
+
+  background: #252122;
 }
